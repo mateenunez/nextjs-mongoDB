@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### **CRUD MongoDB en NextJS**
 
-## Getting Started
+Esta pagina trata de tareas, objetos simples con titulo y descripcion, el cual el usuario podria realizar las funciones CRUD (Create, Read, Update, Delete).
+El estilo es comun, me centre mas en aprender MongoDB y hooks de react.
 
-First, run the development server:
+### **Pagina de crear tarea**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Screenshot_1](https://github.com/mateenunez/nextjs-mongoDB/assets/62401255/7d757515-83d8-4163-b958-55d0786bb246)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+_En este formulario basico el usuario podria guardar los contenidos de la tarea que escriba, o eliminar la tarea. El titulo es campo clave y en caso de no existir la tarea lo muestra por consola al error._
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### **Pagina principal**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Screenshot_2](https://github.com/mateenunez/nextjs-mongoDB/assets/62401255/08447991-1cf4-4f81-a4a9-fae4922c8fb8)
 
-## Learn More
+_Ahora el usuario tiene dos tareas, en la pagina principal se muestran todas las tareas actuales. Al hacer click en una te redirecciona al formulario pero esta vez para actualizar el contenido de la tarea_
 
-To learn more about Next.js, take a look at the following resources:
+![Screenshot_3](https://github.com/mateenunez/nextjs-mongoDB/assets/62401255/84399b4c-5de7-4efe-976b-9cea0b2ad8b7)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+_Ahora los placeholders cambian a el titulo y descripcion de la tarea, y cuando el usuario cambie los datos y presione en guardar se actualiza. Si presiona eliminar, se elimina._
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+_**Posibles cambios: en un futuro podria agregar un footer sencillo e implementar una API para crear PDFs de las tareas.**_
